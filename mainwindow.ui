@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>653</width>
+    <height>414</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>421</width>
+      <height>211</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Выберете функцию:</string>
+    </property>
+    <widget class="QRadioButton" name="function4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>170</y>
+       <width>401</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>f(x)=(x1+10x2)^2+5(x3-x4)^2+(x2-2x3)^4+10(x1-x4)^4</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>130</y>
+       <width>371</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>+(1-x3)^2+10.1((x2-1)^2+(x4-1)^2)+19.8(x2-1)(x4-1)</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="function1">
+     <property name="geometry">
+      <rect>
+       <x>11</x>
+       <y>27</y>
+       <width>191</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>f(x)=4(x1-5)^2+(x2-6)^2</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="function3">
+     <property name="geometry">
+      <rect>
+       <x>11</x>
+       <y>101</y>
+       <width>361</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>f(x)=100(x2-x1^2)^2+(1-x1)^2+90(x4-x3^2)^2+</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="function2">
+     <property name="geometry">
+      <rect>
+       <x>11</x>
+       <y>64</y>
+       <width>277</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>f(x)=(x1^2+x2-11)^2+(x1+x2^2-7)^2</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>210</y>
+      <width>421</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Метод:</string>
+    </property>
+    <widget class="QRadioButton" name="method1">
+     <property name="geometry">
+      <rect>
+       <x>11</x>
+       <y>29</y>
+       <width>381</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Метод Гаусса-Зейделя (2.1.1)</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="method2">
+     <property name="geometry">
+      <rect>
+       <x>11</x>
+       <y>68</y>
+       <width>321</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Метод переменной метрики ДФП (2.2.3)</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="method3">
+     <property name="geometry">
+      <rect>
+       <x>11</x>
+       <y>107</y>
+       <width>391</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Метод Ньютона-Рафсона (2.3.1)</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_3">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>0</y>
+      <width>201</width>
+      <height>211</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Координаты X и h</string>
+    </property>
+    <widget class="QDoubleSpinBox" name="x1">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>70</y>
+       <width>51</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="buttonSymbols">
+      <enum>QAbstractSpinBox::NoButtons</enum>
+     </property>
+     <property name="minimum">
+      <double>-99.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="Line" name="line">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>50</y>
+       <width>161</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="Line" name="line_2">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>30</y>
+       <width>20</width>
+       <height>161</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>30</y>
+       <width>31</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>X</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>30</y>
+       <width>31</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>h</string>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="h1">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>70</y>
+       <width>51</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="buttonSymbols">
+      <enum>QAbstractSpinBox::NoButtons</enum>
+     </property>
+     <property name="minimum">
+      <double>-99.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="x2">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>100</y>
+       <width>51</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="buttonSymbols">
+      <enum>QAbstractSpinBox::NoButtons</enum>
+     </property>
+     <property name="minimum">
+      <double>-99.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="x3">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>130</y>
+       <width>51</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="buttonSymbols">
+      <enum>QAbstractSpinBox::NoButtons</enum>
+     </property>
+     <property name="minimum">
+      <double>-99.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="x4">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>160</y>
+       <width>51</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="buttonSymbols">
+      <enum>QAbstractSpinBox::NoButtons</enum>
+     </property>
+     <property name="minimum">
+      <double>-99.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="h3">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>130</y>
+       <width>51</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="buttonSymbols">
+      <enum>QAbstractSpinBox::NoButtons</enum>
+     </property>
+     <property name="minimum">
+      <double>-99.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="h4">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>160</y>
+       <width>51</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="buttonSymbols">
+      <enum>QAbstractSpinBox::NoButtons</enum>
+     </property>
+     <property name="minimum">
+      <double>-99.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="h2">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>100</y>
+       <width>51</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="buttonSymbols">
+      <enum>QAbstractSpinBox::NoButtons</enum>
+     </property>
+     <property name="minimum">
+      <double>-99.000000000000000</double>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_4">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>210</y>
+      <width>201</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Точность e:</string>
+    </property>
+    <widget class="QDoubleSpinBox" name="toch_e">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>71</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="buttonSymbols">
+      <enum>QAbstractSpinBox::NoButtons</enum>
+     </property>
+     <property name="minimum">
+      <double>-99.000000000000000</double>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="res">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>330</y>
+      <width>93</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Расчитать</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_5">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>270</y>
+      <width>201</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Значение f:</string>
+    </property>
+    <widget class="QDoubleSpinBox" name="function">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>71</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="buttonSymbols">
+      <enum>QAbstractSpinBox::NoButtons</enum>
+     </property>
+     <property name="minimum">
+      <double>-99.000000000000000</double>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>653</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
