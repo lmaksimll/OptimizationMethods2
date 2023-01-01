@@ -17,7 +17,11 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 set(PROJECT_SOURCES
         main.cpp
         mainwindow.cpp
+        function.cpp
+        alpha.cpp
         mainwindow.h
+        function.h
+        alpha.h
         mainwindow.ui
 )
 

@@ -2,6 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <alpha.h>
+#include <function.h>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -22,12 +24,25 @@ private slots:
 
     void res();
 
-    float Med_devisa(int f,float z[2][4],float N[2]);
-    float Med_popolam(int f,float N[2]);
-    float Gaysa_Zedele();
+    float find_minimum(alpha *alp);
 
-    float function(int f,float x1,float x2);
+    QVector<float>grad(function *f, QVector<float>x);
 
+    QVector<QVector<float>>gessa(function *f,QVector<float>x);
+
+    float norma(QVector<float>f);
+
+    QVector<QVector<float>>envers_matrix(QVector<QVector<float>>f);
+
+    float det(QVector<QVector<float>>f);
+
+    QVector<QVector<float>>minor(QVector<QVector<float>>f);
+
+    QVector<QVector<float>>mul(QVector<QVector<float>>f,float b);
+
+    QVector<float>mul(QVector<float>f,float b);
+
+    QVector<float>mul(QVector<QVector<float>>f,QVector<float>b);
 
 
 };
